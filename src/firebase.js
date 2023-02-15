@@ -6,7 +6,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: `${process.env.FIREBASE_API_KEY}`,
+  apiKey: `AIzaSyD2JuNk5QqD6vvFXSUvijtBhYq2EyhXjIA`,
   authDomain: "we-chat-d9be8.firebaseapp.com",
   projectId: "we-chat-d9be8",
   storageBucket: "we-chat-d9be8.appspot.com",

@@ -5,6 +5,14 @@ import { ChatContext } from "../context/ChatContext";
 const Message = ({ message }) => {
   const { user } = useContext(AuthContext);
   const { data } = useContext(ChatContext);
+  // console.log("message ", message);
+  console.log("date");
+  console.log("date");
+  console.log("date");
+  const date = new Date(message.data.seconds * 1000).getDate();
+  const month = new Date(message.data.seconds * 1000).getMonth();
+  const year = new Date(message.data.seconds * 1000).getFullYear();
+
   const ref = useRef();
   useEffect(() => {
     ref.current?.scrollIntoView({ behaviour: "smooth" });
@@ -21,7 +29,7 @@ const Message = ({ message }) => {
           }
           alt="user image"
         />
-        <span className="message__time">just now</span>
+        <span className="message__time">{date + "-" + month + "-" + year}</span>
       </div>
 
       <div className="message__content">
